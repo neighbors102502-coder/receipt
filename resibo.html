@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Receipt System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="invoice-POS">
+    <center id="top">
+      <div class="logo"></div>
+      <h2>FLIGHT RECEIPT</h2>
+    </center>
+
+    <div id="bot">
+      <table>
+        <tr class="tabletitle">
+          <td><h2>Description</h2></td>
+          <td><h2>Details</h2></td>
+        </tr>
+        
+        <tr class="service">
+          <td><p class="itemtext">Destination (a)</p></td>
+          <td><p class="itemtext" id="db-a">Western Visayas</p></td>
+        </tr>
+        
+        <tr class="service">
+          <td><p class="itemtext">Schedule (b)</p></td>
+          <td><p class="itemtext" id="db-b">May - 08 - 2026 (10am)</p></td>
+        </tr>
+
+        <tr class="service">
+          <td><p class="itemtext">Seat (d)</p></td>
+          <td><p class="itemtext" id="db-d">D2</p></td>
+        </tr>
+
+        <tr class="tabletitle">
+          <td><h2>Total (c)</h2></td>
+          <td class="payment"><h2 id="db-c">2800</h2></td>
+        </tr>
+      </table>
+
+      <div id="controls">
+        <button class="btn save" onclick="saveToDatabase()">Save to Receipt Table</button>
+        <button class="btn clear" onclick="clearInvoice()">Clear Receipt</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
